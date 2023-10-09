@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+.Facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(21, 241, 21);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.Facebook h1 {
+    position: absolute;
+    top: 9px;
+    left: 36px;
+    font-size: 70px;
+}
+
+.h1_1 {
+    color: green;
+    z-index: 3;
+    transition: 1.0s;
+}
+
+.h1_2 {
+    color: white;
+    z-index: 2;
+    transform: scale(0);
+    transition: 1.0s;
+}
+
+
+
+.Facebook:hover .h1_1 {
+    color: white;
+    transform: scale(0);
+    overflow: 0;
+}
+
+.Facebook:hover .h1_2 {
+    transform: scale(1);
+    z-index: 3;
+}
+
+.bgcolor {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    z-index: 0;
+    transform: translate(-200px, 250px) rotate(45deg);
+    transition: 1s;
+}
+
+.Facebook:hover .bgcolor {
+    transition: 1s;
+    transform: translate(60px, -20px) rotate(45deg);
+}
+
+.twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.twitter svg {
+    fill: rgb(6, 235, 235);
+    transform: scale(1);
+    transition: 1s;
+}
+
+.twitter:hover svg {
+    fill: #fff;
+    transition: 1s;
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+.twitterbg {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(6, 235, 235);
+    transform: translate(-200px, 250px) rotate(45deg);
+    transition: 1s;
+}
+
+.twitter:hover .twitterbg{
+    transform: translate(60px, -20px) rotate(45deg)
+}
